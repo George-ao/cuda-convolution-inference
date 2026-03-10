@@ -2,13 +2,13 @@
 
 This repo is a CUDA programming portfolio project for CNN inference acceleration.
 
-This implementation was the second-fastest in a CUDA programming competition.
+This implementation was the second-fastest in ECE408 CUDA programming competition.
 
 ## What This Repo Demonstrates
 
 - High-performance CUDA kernel design for convolution-heavy workloads.
 - Practical performance engineering techniques for GPU compute.
-- Layer-aware tuning instead of one-kernel-fits-all configuration.
+- Host-side CUDA orchestration: allocation, transfer, launch, sync, and output collection.
 
 ## CUDA Optimization Techniques
 
@@ -25,15 +25,25 @@ This implementation was the second-fastest in a CUDA programming competition.
 
 - `cuda_conv_kernel.cu`
 - `cuda_conv_interface.h`
+- `cuda_conv_host_demo.cu`
 
 ## Workflow Diagram
 
 ```mermaid
 flowchart LR
-  A[Input Feature Maps] --> B[Fused Conv Kernel]
-  B --> C[Tensor Core WMMA Compute]
-  C --> D[Write Output Feature Maps]
+  A[Host Input Buffer] --> B[H2D Copy and Device Alloc]
+  B --> C[Fused Conv CUDA Kernel]
+  C --> D[Device Sync]
+  D --> E[D2H Copy and Output Checksum]
 ```
+
+## Quick Compile Demo
+
+```bash
+nvcc -O3 -arch=sm_86 cuda_conv_host_demo.cu cuda_conv_kernel.cu -o cuda_conv_demo
+./cuda_conv_demo
+```
+
 
 ## Archive
 
