@@ -1,9 +1,11 @@
 #include "ece408net.h"
+#include <cstdlib>
+#include <string>
 
-void inference_only(int batch_size) {
+void inference_only(int batch_size, const std::string& dataset_path) {
 
   std::cout<<"Loading fashion-mnist data...";
-  MNIST dataset("/projects/bche/project/data/fmnist-86/");
+  MNIST dataset(dataset_path);
   dataset.read_test_data(batch_size);
   std::cout<<"Done"<<std::endl;
   
@@ -21,13 +23,22 @@ void inference_only(int batch_size) {
 int main(int argc, char* argv[]) {
   
   int batch_size = 10000;
-  
-  if(argc == 2){
+  std::string dataset_path = "/projects/bche/project/data/fmnist-86/";
+
+  if (const char* env_path = std::getenv("FMNIST_PATH")) {
+    dataset_path = env_path;
+  }
+
+  if(argc >= 2){
     batch_size = atoi(argv[1]);
+  }
+  if(argc >= 3){
+    dataset_path = argv[2];
   }
 
   std::cout<<"Test batch size: "<<batch_size<<std::endl;
-  inference_only(batch_size);
+  std::cout<<"Dataset path: "<<dataset_path<<std::endl;
+  inference_only(batch_size, dataset_path);
 
   return 0;
 }

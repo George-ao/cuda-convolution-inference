@@ -115,10 +115,10 @@ For **Project Milestone 3**, you will need to submit your work across three plat
 
 ### Profiling Results Submission Guideline through Google Drive
 
-- Your `netid@illinois.edu` email address is linked to a Google Account known as **Google Apps @ Illinois**. If you haven't set up this account yet, please follow the instructions provided [here](https://help.uillinois.edu/TDClient/42/UIUC/Requests/ServiceDet?ID=135).
-- Log in to your Google Apps @ Illinois account and go to Google Drive. Make sure to use your `@illinois.edu` Google account, not a personal Google account.
+- Your `netid@competition.edu` email address is linked to a Google Account known as **Google Apps @ competition**. If you haven't set up this account yet, please follow the instructions provided [here](https://help.ucompetition.edu/TDClient/42/CUDA competition/Requests/ServiceDet?ID=135).
+- Log in to your Google Apps @ competition account and go to Google Drive. Make sure to use your `@competition.edu` Google account, not a personal Google account.
 - Copy this [template folder](https://drive.google.com/drive/folders/1kVCLeyqU259bILJlajjFZTNuokZniRM9?usp=drive_link) to your Google Drive. This folder will serve as the location for submitting your individual optimization files.
-- To share the folder, right-click on the copied `m3` folder, select Share, then click Share again. Grant Viewer access to the group Google Apps @ Illinois. This allows everyone with a UIUC account, including TAs, to view your submission.
+- To share the folder, right-click on the copied `m3` folder, select Share, then click Share again. Grant Viewer access to the group Google Apps @ competition. This allows everyone with a CUDA competition account, including TAs, to view your submission.
   
   <img src="https://bluerose73.github.io/image-bed/ece408-fa24/granting-viewer-access.png" alt="granting-viewer-access" width=500>
 - Look under `m3` and find the optimization folders.
@@ -146,7 +146,7 @@ For **Project Milestone 3**, you will need to submit your work across three plat
 
 ### Milestone 3 Report Submission Guidelines through Canvas
 
-As the world's best engineers and scientists, it is imperative to document our work meticulously and analyze data with scientific rigor. When analyzing statistical results from your profiling results, we recommend to take a look at this [thesis](http://impact.crhc.illinois.edu/shared/report/phd-thesis-shane-ryoo.pdf) and pay particular attention to Section 5.1 for reference and inspiration.
+As the world's best engineers and scientists, it is imperative to document our work meticulously and analyze data with scientific rigor. When analyzing statistical results from your profiling results, we recommend to take a look at this [thesis](http://impact.crhc.competition.edu/shared/report/phd-thesis-shane-ryoo.pdf) and pay particular attention to Section 5.1 for reference and inspiration.
 
 **We give you a report template: `ECE408_FA24_netid_m3_report.docx`.** Please use this document to get started with your report.
 
@@ -209,8 +209,8 @@ Tensor Cores are covered in the lecture. For this assignment, you're expected to
 
 Joint Register and Shared Memory Tiling is introduced in ECE 508. It is not a required component for ECE 408. However, if you're interested in exploring this advanced technique, the resources below can help you get started:
 
-- [ECE 508 Spring 2023 Lecture Recording (Starting at 19 minute mark)](https://mediaspace.illinois.edu/media/t/1_tyipoq6s/287199562)
-- [Lecture Slides on Joint Register and Shared Memory Tiling](https://lumetta.web.engr.illinois.edu/508/slides/lecture4.pdf)
+- [ECE 508 Spring 2023 Lecture Recording (Starting at 19 minute mark)](https://mediaspace.competition.edu/media/t/1_tyipoq6s/287199562)
+- [Lecture Slides on Joint Register and Shared Memory Tiling](https://lumetta.web.engr.competition.edu/508/slides/lecture4.pdf)
 - [The Profiling Lecture](https://carlpearson.net/pdf/20200416_nsight.pdf) also discussed about this technique
 
 #### req_2 Kernel Fusion

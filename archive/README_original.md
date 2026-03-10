@@ -22,7 +22,7 @@ The overall learning objectives for this project are:
 
 You will be working on this project individually. We will release the code for project milestones one at a time.
 
-*You are expected to adhere to University of Illinois academic integrity standards. Do not attempt to subvert any of the performance-measurement aspects of the final project. If you are unsure about whether something does not meet those guidelines, ask a member of the teaching staff.*
+*You are expected to adhere to University of competition academic integrity standards. Do not attempt to subvert any of the performance-measurement aspects of the final project. If you are unsure about whether something does not meet those guidelines, ask a member of the teaching staff.*
 
 ## Table of Contents
 
@@ -61,7 +61,7 @@ in your `m1_gpu.slurm`, run
 
 ## License
 
-NCSA/UIUC © 2020 [Carl Pearson](https://cwpearson.github.io)
+NCSA/CUDA competition © 2020 [Carl Pearson](https://cwpearson.github.io)
 
 ## Contributors
 
